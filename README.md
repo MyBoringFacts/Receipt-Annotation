@@ -34,18 +34,7 @@ The pipeline consists of the following steps:
    - Embeds the image (encoded in base64) along with its annotation data.
    - Saves the LabelMe JSON files into the `labelme_data/` folder.
 
-## Repository Structure
 
-```
-.
-├── images/                # Original receipt images
-├── images_json/           # JSON outputs from Azure Document Intelligence
-├── yolo_annotations/      # YOLO-format annotation files generated from JSON
-├── yolo_dataset/          # YOLO dataset structure (train/val images and labels)
-├── labelme_data/          # LabelMe JSON annotations generated from YOLO files
-├── main.py                # Main script integrating the pipeline steps
-└── README.md              # This file
-```
 
 ## Requirements
 
@@ -95,6 +84,7 @@ This will:
 - Generate YOLO annotations from the JSON files.
 - Split the dataset into training and validation sets.
 - Convert YOLO annotations into LabelMe format.
+- labelme part is optional. you can delete that part of code if you dont need it.
 
 ## Customization and Future Enhancements
 
