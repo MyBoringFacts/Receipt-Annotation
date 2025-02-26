@@ -75,7 +75,7 @@ Adjust the paths if needed:
 Run the main script to execute the entire pipeline:
 
 ```bash
-python main.py
+python batch_process_data.py
 ```
 
 This will:
